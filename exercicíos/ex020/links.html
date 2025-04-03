@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--
+    #- id
+    .- class
+    :- pseodu-classe
+    ::-pseudo-elemento
+    >- children 
+    -->
+    <style>
+       a{
+        color: red;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+       }
+       a:visited{
+        color: darkred;
+       }
+       a:hover{
+        text-decoration: underline;
+        color: black;
+       }
+       a:active{
+        color: #FA9E16
+       }
+       
+       .especial{
+        background-color: rgba(195, 78, 78, 0.704);
+       }
+       .especial::before{
+        content: '»' ;
+       }
+       .especial::after{
+        content: '«' ;
+       }
+       h1{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#FA2816 ;
+        background-color:#f11d6753;
+       }
+       li{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       body{
+        background-color:#f11d6753;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank">
+            <li>Github</li>
+        </a>
+        <a href="https://www.youtube.com/@FutebolSintonia" target="_blank" class=>
+            <li class="especial">Canal no Youtube</li>
+        </a>
+        <a href="https://j8outletofc.offstore.me/shop" target="_blank">
+            <li class="especial">Loja virtual</li>
+        </a>
+    </ul>
+</body>
+</html>
