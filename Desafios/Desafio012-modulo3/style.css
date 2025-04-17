@@ -19,7 +19,7 @@
 }
 
 html, body{
-    min-height: 95vh;
+    min-height: 100vh;
     background-color: lightgray;
     font-family: var(--fonte01);
 }
@@ -28,7 +28,7 @@ header{
     color: white;
     background-color: black;
     text-align: center;
-    height: 180px;
+    
 }
 
 header > h1{
@@ -67,14 +67,28 @@ section.normal{
 }
 
 section.imagem{
-    background-color: rgba(0, 0, 0, 0.468);
+    background-color: rgba(0, 0, 0, 0.507);
     color: white;
+    text-shadow: 1px 1px 0px;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.337);
+    background-attachment: fixed;
 }
 
 section.imagem > p{
     background-color: rgba(0, 0, 0, 0.601);
     display: inline-block;
     padding: 5px;
+}
+
+section#img01{
+background-image: url(imagens/background001.jpg);
+background-position: right center;
+background-size: cover;
+}
+
+section#img02{
+background-image: url(imagens/background002.jpg);
+background-size: cover;
 }
 
 footer{
